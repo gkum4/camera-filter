@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		0CB34BEF2832D2170046F4DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB34BEE2832D2170046F4DC /* AppDelegate.swift */; };
 		0CB34BF12832D2170046F4DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB34BF02832D2170046F4DC /* SceneDelegate.swift */; };
-		0CB34BF32832D2170046F4DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB34BF22832D2170046F4DC /* ViewController.swift */; };
+		0CB34BF32832D2170046F4DC /* CameraFilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB34BF22832D2170046F4DC /* CameraFilterVC.swift */; };
 		0CB34BF62832D2170046F4DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB34BF42832D2170046F4DC /* Main.storyboard */; };
 		0CB34BF82832D2190046F4DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CB34BF72832D2190046F4DC /* Assets.xcassets */; };
 		0CB34BFB2832D2190046F4DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB34BF92832D2190046F4DC /* LaunchScreen.storyboard */; };
+		0CB34C032832D2520046F4DC /* CameraFilterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB34C022832D2520046F4DC /* CameraFilterHandler.swift */; };
+		0CB34C052832D2650046F4DC /* ApplyFilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB34C042832D2650046F4DC /* ApplyFilterButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0CB34BEB2832D2170046F4DC /* CameraFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB34BEE2832D2170046F4DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CB34BF02832D2170046F4DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0CB34BF22832D2170046F4DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0CB34BF22832D2170046F4DC /* CameraFilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFilterVC.swift; sourceTree = "<group>"; };
 		0CB34BF52832D2170046F4DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CB34BF72832D2190046F4DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CB34BFA2832D2190046F4DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CB34BFC2832D2190046F4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CB34C022832D2520046F4DC /* CameraFilterHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFilterHandler.swift; sourceTree = "<group>"; };
+		0CB34C042832D2650046F4DC /* ApplyFilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyFilterButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				0CB34BEE2832D2170046F4DC /* AppDelegate.swift */,
 				0CB34BF02832D2170046F4DC /* SceneDelegate.swift */,
-				0CB34BF22832D2170046F4DC /* ViewController.swift */,
+				0CB34C042832D2650046F4DC /* ApplyFilterButton.swift */,
+				0CB34C022832D2520046F4DC /* CameraFilterHandler.swift */,
+				0CB34BF22832D2170046F4DC /* CameraFilterVC.swift */,
 				0CB34BF42832D2170046F4DC /* Main.storyboard */,
 				0CB34BF72832D2190046F4DC /* Assets.xcassets */,
 				0CB34BF92832D2190046F4DC /* LaunchScreen.storyboard */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CB34BF32832D2170046F4DC /* ViewController.swift in Sources */,
+				0CB34C052832D2650046F4DC /* ApplyFilterButton.swift in Sources */,
+				0CB34BF32832D2170046F4DC /* CameraFilterVC.swift in Sources */,
+				0CB34C032832D2520046F4DC /* CameraFilterHandler.swift in Sources */,
 				0CB34BEF2832D2170046F4DC /* AppDelegate.swift in Sources */,
 				0CB34BF12832D2170046F4DC /* SceneDelegate.swift in Sources */,
 			);
@@ -287,8 +295,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L5C36X97NN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CameraFilter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Camera Filter";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is used to apply image filters";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -314,8 +325,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L5C36X97NN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CameraFilter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Camera Filter";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is used to apply image filters";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
